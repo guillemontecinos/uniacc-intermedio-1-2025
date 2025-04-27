@@ -1,0 +1,71 @@
+@font-face {
+    font-family: Inter;
+    src: url('./Barlow/Barlow-Bold.ttf');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Inter;
+    src: url('./Barlow/Barlow-Regular.ttf');
+    font-weight: normal;
+}
+
+body{
+    margin: 0px;
+}
+
+.header{
+    width: 100%;
+    height: 120px;
+    border-bottom: solid 1px black;
+    display: grid;
+    grid-template-columns: 40% 30% 30%;
+    .curso{
+        display: flex;
+        border-right: solid 1px black;
+        p{
+            font-family: Inter;
+            font-weight: bold;
+            font-size: 40px;
+            margin: auto;
+            text-align: center;
+        }
+    }
+    .student{
+        display: flex;
+        border-right: solid 1px black;
+        p{
+            font-family: Inter;
+            font-weight: normal;
+            font-size: 23px;
+            margin: auto;
+            margin-left: 3vw;
+        }
+    }
+    .description{
+        display: flex;
+        p{
+            font-family: Inter;
+            font-weight: normal;
+            font-size: 20px;
+            margin: auto;
+            margin-left: 3vw;
+            margin-right: 3vw;
+            .project-title{
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.content{
+    width: 100%;
+    height: calc(100vh - 120px);
+    display: flex;
+    .project-container{
+        margin: auto;
+        &.hidden{
+            display: none;
+        }
+    }
+}
